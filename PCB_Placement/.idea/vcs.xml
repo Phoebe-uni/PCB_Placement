@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/bin/KicadParser" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bin/KicadParser/netlist_graph" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bin/KicadParser/pcb" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bin/KicadParser/pcb/netlist_graph" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bin/SA_PCB" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bin/SA_PCB/KicadParser" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bin/SA_PCB/KicadParser/netlist_graph" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bin/SA_PCB/KicadParser/pcb" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bin/SA_PCB/KicadParser/pcb/netlist_graph" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bin/SA_PCB/netlist_graph" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bin/pcbRouter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bin/pcbRouter/KicadParser" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bin/pcbRouter/KicadParser/netlist_graph" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bin/pcbRouter/KicadParser/pcb" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bin/pcbRouter/KicadParser/pcb/netlist_graph" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bin/pcbRouter/netlist_graph" vcs="Git" />
+  </component>
+</project>

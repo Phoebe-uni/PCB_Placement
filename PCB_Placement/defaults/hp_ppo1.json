@@ -1,0 +1,1 @@
+{"learning_rate": 0.0003, "lr_critic": 0.001, "buffer_size": 25000, "n_steps": 2048, "batch_size": 64, "gamma": 0.99, "net_arch": {"pi": [64,128,64], "qf": [64,128]}, "activation_fn": "relu", "expl_noise": 0.1, "clip_param": 0.2, "max_grad_norm": 0.5}
