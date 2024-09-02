@@ -1,6 +1,6 @@
 # PCB_Placement
 
-This project is about using PPO, A2C and DDPG algorithms to realize PCB auto placement.
+This project is about using PPO, A2C and DDPG algorithms to realize PCB auto placement. Part of code is referenced to https://github.com/lukevassallo/rl_pcb.git.
 
 ## Code Structure
 
@@ -13,7 +13,7 @@ This project is about using PPO, A2C and DDPG algorithms to realize PCB auto pla
 
 
 ## Run automated installation script
-The installation of this projet is referenced to https://github.com/lukevassallo/rl_pcb.git
+The installation of this projet is referenced to https://github.com/lukevassallo/rl_pcb.git. 
 The automated installation procedure makes the following changes to the local repository:
 - Create a directory bin and installs the KiCad parsing utility, and place and route tools
 - Creates an environment using python3.8, installs pytorch 1.13 with CUDA 11.7 and all necessary python packages
