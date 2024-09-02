@@ -226,10 +226,12 @@ if __name__ == "__main__":
         print(f'key is: {key}, value is :{value}')
         if key == "charts":
             for k,v in value.items():
+                print(f"k: {v}, v :{v}")
                 work_dir = os.path.join(tmp_dir,k)
                 os.makedirs(work_dir)
 
                 all_recs = []
+                #print (f"args.dirs: {args.dirs}")
                 for directory in args.dirs:
                     for fd in os.listdir(directory):
                         path = os.path.join(directory,fd)
@@ -284,6 +286,7 @@ if __name__ == "__main__":
                         else:
                             exp_algos.append(t)
 
+                print(f"exp_algos : {exp_algos}")
                 cols_combined = []
                 for ea in exp_algos:
                     if "window" in v:

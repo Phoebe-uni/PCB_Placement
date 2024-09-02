@@ -231,8 +231,8 @@ class TD3(object):
 
             # Compute actor losse
             actor_loss = -self.critic.Q1(state, self.actor(state)).mean()
-            if self.total_it % 500 == 0:
-                print('action_loss {}'.format(actor_loss))
+            #if self.total_it % 3000 == 0:
+            #    print('action_loss {}'.format(actor_loss))
 
             # Optimize the actor
             self.actor_optimizer.zero_grad()
@@ -250,8 +250,15 @@ class TD3(object):
                                            ):
                 target_param.data.copy_(self.tau * param.data + (1 - self.tau) * target_param.data)
 
-            return critic_loss.cpu().detach().numpy(), actor_loss.cpu().detach().numpy()
+            loss1 = critic_loss.cpu().detach().numpy()
+            loss2 = actor_loss.cpu().detach().numpy()
+            if self.total_it % 5000 == 0:
+                print(f"TD3 {self.total_it}, critic_loss: {loss1}, actor_loss: {loss2}")
 
+            return critic_loss.cpu().detach().numpy(), actor_loss.cpu().detach().numpy()
+        loss3 = critic_loss.cpu().detach().numpy()
+        if self.total_it % 5000 == 1:
+            print(f"TD3 {self.total_it}, critic_loss: {loss3}")
         return critic_loss.cpu().detach().numpy(), None
 
     def save(self, filename):
@@ -346,6 +353,9 @@ class TD3(object):
             if self.done:
                 episode_finish_time = time.clock_gettime(time.CLOCK_REALTIME)
                 if t < start_timesteps:
+                    actor_loss = 0
+                    critic_loss = 0
+
                     self.trackr.append(actor_loss=0,
                                        critic_loss=0,
                                        episode_reward=episode_reward,
@@ -357,6 +367,10 @@ class TD3(object):
                            episode_reward=episode_reward,
                            episode_length = episode_timesteps,
                            episode_fps = episode_timesteps / (episode_finish_time - episode_start_time))
+                if t%5000 == 0:
+                    print(f"TD3 {t}, actor_loss: {actor_loss}, critic_loss: {critic_loss}, ep_reward: {episode_reward}")
+                    print(f"TD3 {t}, epi_length: {episode_timesteps}, epi_fps: {episode_timesteps / (episode_finish_time - episode_start_time)}")
+
 
             callback.on_step()
             if self.done:

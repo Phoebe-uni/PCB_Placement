@@ -15,7 +15,7 @@ def load_report_config(filename):
     return report_config    
         
 charts = {
-    '05_training_td3_cuda_fast_262': {  'experiments':['training_td3_cuda_262'],
+    'parameter_test_262': {  'experiments':['parameter_experiment_262'],
                                             'algorithms': ['TD3'],
                                             'multi_agent': True,
                                             'window': 100,
@@ -24,6 +24,7 @@ charts = {
                                             'ylabel': "Average return (unit)",
                                             'label':    {
                                                         # PARTIALLY SUPPORTED FOR MULTI AGENT
+                                                            'parameter_experiment_262:TD3': 'TD3',
                                                         },   
                                             },                                                    
          }

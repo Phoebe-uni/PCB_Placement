@@ -79,7 +79,7 @@ def gen_default_hyperparameters(on_policy=False):
     return default_hyperparameters
 
 def gen_default_sb3_hyperparameters(algo:str, max_steps:int):
-    if algo in ("TRPO", "PPO"):
+    if algo in ("TRPO", "PPO", 'A2C'):
         default_hyperparameters = gen_default_hyperparameters(on_policy=True)
     else:
         default_hyperparameters = gen_default_hyperparameters(on_policy=False)
@@ -89,7 +89,7 @@ def gen_default_sb3_hyperparameters(algo:str, max_steps:int):
         default_hyperparameters["n_steps"] = 2048
         default_hyperparameters["batch_size"] = 128
 
-    elif algo == "PPO":
+    elif algo == "PPO" or algo == "A2C":
         default_hyperparameters["learning_rate"] = 0.0003
         default_hyperparameters["n_steps"] = 2048
         default_hyperparameters["batch_size"] = 64
@@ -117,7 +117,7 @@ def gen_default_sb3_hyperparameters(algo:str, max_steps:int):
     # common settings
     default_hyperparameters["gamma"] = 0.99
 
-    if algo in ("TRPO", "PPO"):
+    if algo in ("TRPO", "PPO", "A2C"):
         default_hyperparameters["net_arch"] = [dict(pi=[32, 32, 128, 64, 64],
                                                      vf=[64, 128, 64])]
         default_hyperparameters["activation_fn"] = "tanh"
@@ -225,7 +225,7 @@ def sample_hyperparameters_hp( trial: optuna.Trial,
     else:
         hyperparameters = load_hyperparameters_from_file(base_hyperparameters)
 
-    if algo in ("TRPO", "PPO"):
+    if algo in ("TRPO", "PPO", "A2C"):
         learning_rate = trial.suggest_float("learning_rate",
                                             1e-5, 1e-2,
                                             log=True)
@@ -318,7 +318,7 @@ def save_best_hyperparameters_hp(filename: str,
     hyperparameters["learning_rate"] = best_params["learning_rate"]
     hyperparameters["batch_size"] = best_params["batch_size"]
 
-    if algo in ("TRPO", "PPO"):
+    if algo in ("TRPO", "PPO", "A2C"):
         hyperparameters["n_steps"] = best_params["n_steps"]
     else:
         hyperparameters["buffer_size"] = best_params["buffer_size"]

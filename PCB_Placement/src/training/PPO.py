@@ -4,6 +4,8 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.distributions import Normal, Categorical
+from torch.distributions import MultivariateNormal
+import math
 
 import utils
 import tracker
@@ -11,8 +13,6 @@ import time
 
 #Implement PPO
 #Writen by YYF.
-
-
 
 class Actor(nn.Module):
     def __init__(self,
@@ -27,92 +27,123 @@ class Actor(nn.Module):
         super(Actor, self).__init__()
         self.device = device
         self.pi = nn.Sequential()
+        self.action_dim = action_dim
+        self.state_dim = state_dim
         in_size = state_dim
         for layer_sz in pi:
             self.pi.append(nn.Linear(in_size, layer_sz))
             in_size = layer_sz
-        self.pi.append(nn.Linear(in_size, action_dim))
+        #self.pi.append(nn.Linear(in_size, action_dim))
         self.max_action = max_action
+
+        self.action_mean = nn.Linear(in_size, action_dim)
+        self.action_mean.weight.data.mul_(0.1)
+        self.action_mean.bias.data.mul_(0.0)
+        self.log_std = 0.0
+        self.action_log_std = nn.Parameter(torch.ones(1, action_dim) * self.log_std)
 
         if activation_fn == "relu":
             self.activation_fn = F.relu
         elif activation_fn == "tanh":
-            self.activation_fn == nn.Tanh
+            self.activation_fn = torch.tanh
+        elif activation_fn == 'sigmoid':
+            self.activation_fn = torch.sigmoid
+
+
+
         self.steps = 0
 
     def forward(self, state):
         x = state
-        for i in range(len(self.pi)-1):
+        for i in range(len(self.pi)):
             x = self.activation_fn(self.pi[i](x))
-        y = self.max_action * torch.sigmoid(self.pi[-1](x))
+        action_mean = self.action_mean(x)
+        #print(f"action_log_std shape:{self.action_log_std.shape}")
+        #print(f"x shape: {x.shape}, action_mean :{action_mean.shape}")
+        if len(action_mean.shape) == 2 :
+            action_log_std = nn.Parameter(torch.ones(1, self.action_dim) * self.log_std)
+        elif len(action_mean.shape) == 1:
+            action_log_std = nn.Parameter(torch.ones(self.action_dim) * self.log_std)
+        else:
+            action_log_std = nn.Parameter(torch.ones(self.action_dim) * self.log_std)
+        action_log_std1 = action_log_std.expand_as(action_mean)
+
+
+        action_std = torch.exp(action_log_std1)
         #if self.steps % 200 == 0:
         #    print(f"state: {state}")
         #    print(f"y: {y}")
         self.steps +=  1
-        return y
+        return action_mean, action_log_std, action_std
 
     def select_action(self, state):
-        state = torch.FloatTensor(state.reshape(1, -1)).to(self.device)
-        #state = torch.FloatTensor(state).to(self.device).unsqueeze(0)
-        return self.forward(state).cpu().data.numpy().flatten()
+        #x = torch.FloatTensor(state.reshape(1, -1)).to(self.device)
+        x = torch.FloatTensor(state).to(self.device)
+        action_mean, _, action_std = self.forward(x)
 
-    def get_log_prob(self, state):
-        '''
-        state = torch.FloatTensor(state).to(self.device)
-        with torch.no_grad():
-            action_prob = self.forward(state)
-        c = Categorical(action_prob)
-        action = c.sample()
-        return action_prob[:,action.item()].item()
-        '''
-        state = torch.FloatTensor(state).to(self.device)
-        #state = torch.FloatTensor(state.reshape(1, -1)).to(self.device)
-        with torch.no_grad():
-            action_probs = self.forward(state)
-            #x = action_probs
-            #x_normalized = x / x.abs().max() * torch.sign(x)
-            #action_probs = (x_normalized +1.) / 2.
+        action2 = torch.normal(action_mean.to(self.device), action_std.to(self.device))
+        #action = torch.tanh(action2)
+        action = action2/torch.sqrt(torch.abs(action_mean))
 
-            print(f"action_probs shape: {action_probs.shape}")
-        dist = Categorical(action_probs)
+        action = torch.where(torch.isnan(action), torch.full_like(action, 0), action)
+        action = torch.where(torch.isinf(action), torch.full_like(action, 0), action)
+        noise = np.random.normal(0,0.1, size=3)
+        #if self.steps % 10000 == 0:
+        #    print(f"action mean: {action_mean}, std: {action_std}")
+        #    print(f"action nomal: {action2},  --clip: {action}")
+        #    print(f"noise: {noise}")
+        #action1 = action.cpu().detach().numpy().flatten()
+        action1 = action.cpu().detach().numpy()
+        #print(f"Shape: state: {state.shape}, action: {action.shape}, action1: {action1.shape}")
+        return action1
+    def select_action1(self, state):
+        #x = torch.FloatTensor(state).to(self.device)
+        x = state
+        action_mean, _, action_std = self.forward(x)
+        action = torch.normal(action_mean.to(self.device), action_std.to(self.device))
+        action1 = action
+        #print(f"Shape: state: {state.shape}, action: {action.shape}, action1: {action1.shape}")
+        return action1
+
+    def get_log_prob(self, x, actions):
+        actions = actions.to(self.device)
+        action_mean, action_log_std, action_std = self.forward(x)
+        var = action_std.pow(2)
+        val11 = -(actions - action_mean).pow(2)
+        val1 = val11.cpu() / (2. * var.cpu())
+        val2 = - 0.5 * math.log(2 * math.pi)
+        val3= val1 - action_log_std.cpu()
+        log_density = val3 + val2
+        log_density1 = log_density.sum(1, keepdim=True)
+        return log_density1.to(self.device)
+
+
+    def set_action_std(self, new_action_std):
+        self.action_var = torch.full((self.action_dim,), new_action_std * new_action_std).to(self.device)
+
+    def act(self, state):
+        action_mean = self.forward(state)
+        cov_mat = torch.diag(self.action_var).unsqueeze(dim=0)
+        dist = MultivariateNormal(action_mean, cov_mat)
         action = dist.sample()
         action_logprob = dist.log_prob(action)
-        #print(f"logprob: {action_logprob},  {action_logprob.item()}")
-        return action_logprob.detach()
 
-    def get_log_prob1(self, state):
-        '''
-        state = torch.FloatTensor(state).to(self.device)
-        with torch.no_grad():
-            action_prob = self.forward(state)
-        c = Categorical(action_prob)
-        action = c.sample()
-        return action_prob[:,action.item()].item()
-        '''
-        state = torch.FloatTensor(state).to(self.device)
-        #state = torch.FloatTensor(state.reshape(1, -1)).to(self.device)
-        with torch.no_grad():
-            action_probs = self.forward(state)
-            #x = action_probs
-            #x_normalized = x / x.abs().max() * torch.sign(x)
-            #action_probs = (x_normalized + 1.) / 2.
-            #if self.steps % 200 == 0:
-            #   print(f"action_probs shape: {action_probs.shape}")
-        dist = Categorical(action_probs)
-        action = dist.sample()
-        action_logprob = dist.log_prob(action)
-        #print(f"logprob: {action_logprob},  {action_logprob.item()}")
+        return action.detach(), action_logprob.detach()
+
+    def get_prob(self, state, action):
+        action_mean = self.forward(state)
+
+        action_var = self.action_var.expand_as(action_mean)
+        cov_mat = torch.diag_embed(action_var).to(self.device)
+        dist = MultivariateNormal(action_mean, cov_mat)
+
+        # For Single Action Environments.
+        if self.action_dim == 1:
+            action = action.reshape(-1, self.action_dim)
+        action_logprobs = dist.log_prob(action)
         dist_entropy = dist.entropy()
-        '''
-        if self.steps % 1000 == 0:
-            print(f"state: {state}")
-            print(f"action_probs: {action_probs}")
-            print(f"dist: {dist}")
-            print(f"action:{action}")
-            print(f"action_logprob: {action_logprob}")
-            print(f"dist_entropy: {dist_entropy}")
-        '''
-        return action_logprob.detach(), dist_entropy
+
+        return action_logprobs, dist_entropy
 
 
 class Critic(nn.Module):
@@ -127,31 +158,36 @@ class Critic(nn.Module):
         if activation_fn == "relu":
             self.activation_fn = F.relu
         elif activation_fn == "tanh":
-            self.activation_fn == nn.Tanh
+            self.activation_fn = torch.tanh
+        elif activation_fn == 'sigmoid':
+            self.activation_fn = torch.sigmoid
 
         # Q1 architecture
         self.qf1 = nn.Sequential()
-        in_size = state_dim + action_dim
-        #in_size = state_dim
+        #in_size = state_dim + action_dim
+        in_size = state_dim
         for layer_sz in qf:
             self.qf1.append(nn.Linear(in_size, layer_sz))
             in_size = layer_sz
-        self.qf1.append(nn.Linear(in_size, 1))
+        #self.qf1.append(nn.Linear(in_size, 1))
+        self.value_head = nn.Linear(in_size, 1)
+        self.value_head.weight.data.mul_(0.1)
+        self.value_head.bias.data.mul_(0.0)
 
         self.steps = 0
 
     def forward(self, state, action):
-        sa = torch.cat([state, action], 1)
-        #sa = state
+        #sa = torch.cat([state, action], 1)
+        sa = state
         q1 = sa
-        for i in range(len(self.qf1)-1):
+        for i in range(len(self.qf1)):
             q1 = self.activation_fn(self.qf1[i](q1))
-        q1 = self.qf1[-1](q1)
+        value = self.value_head(q1)
 
         #if self.steps % 200 == 0:
         #    print(f"q1: {q1}")
         self.steps += 1
-        return q1
+        return value
 
 class PPO(object):
     def __init__(
@@ -216,12 +252,10 @@ class PPO(object):
         self.early_stopping = early_stopping
         self.exit = False
 
-        self.ppo_update_time = 5
+        self.l2_reg = 1e-3
         self.total_it = 0
+        self.loss = nn.MSELoss()
 
-    def select_action(self, state):
-        state = torch.FloatTensor(state.reshape(1, -1)).to(self.device)
-        return self.actor(state).cpu().data.numpy().flatten()
 
     def train(self, replay_buffer):
         self.total_it += 1
@@ -229,95 +263,159 @@ class PPO(object):
         # Sample replay buffer
         state, action, next_state, reward, not_done, old_state = replay_buffer.sample(self.batch_size)
 
-        R = 0
-        rewards1 = []
-        reward1 = reward.numpy()
-        for r, n in zip(reversed(reward1), reversed(not_done)):
-            R = r + (1. - n.numpy()) * self.discount * R
-            rewards1.insert(0, R)
-        rewards = torch.tensor(np.array(rewards1), dtype=torch.float).to(self.device)
-        rewards = rewards.view(-1, 1)
-        rewards = (rewards - rewards.mean()) / (rewards.std() + 1e-7)
+        noise = (torch.randn_like(action) * self.policy_noise).clamp(
+                    -self.noise_clip, self.noise_clip)
+
+        old_action = self.actor.select_action1(old_state)
+
+        old_action = old_action + noise
+
+        #R = 0
+        #reward1 = reward.cpu().numpy()
+
+        #for r, n in zip(reversed(reward1), reversed(not_done)):
+        #    R = r + (1. - n.cpu().numpy()) * self.discount  * R
+        #    rewards1.insert(0, R)
+        #rewards = torch.tensor(np.array(rewards1), dtype=torch.float).to(self.device)
+
+        values = self.critic(state, action)
+
+        tensor_type = type(reward)
+        deltas = tensor_type(reward.size(0), 1).to(self.device)
+        advantages = tensor_type(reward.size(0), 1).to(self.device)
+        prev_value = 0
+        prev_advantage = 0
+
+        for i in reversed(range(reward.size(0))):
+            deltas[i] = reward[i] + self.discount * prev_value * not_done[i] - values[i]
+            advantages[i] = deltas[i] + self.discount * self.tau * prev_advantage * not_done[i]
+
+            prev_value = values[i, 0]
+            prev_advantage = advantages[i, 0]
+        returns = values + advantages
+        advantages = (advantages - advantages.mean()) / (advantages.std() + 1e-7)
+
         critic_losses = []
         actor_losses = []
+
+        #old_action = self.actor.select_action1(old_state)
+        fixed_log_probs = self.actor.get_log_prob(old_state, old_action)
+
+        #if self.total_it % 1000 == 0 :
+        #    print(
+        #        f"state, action, reward, not_done shape: {state.shape},{action.shape},{reward.shape},{not_done.shape}")
+        #    # print(f"not_done: {not_done}")
+        #    print(f"Shape: Advantages: {advantages.shape}, returns: {returns.shape}")
+        #    print(f"shape: old_action: {old_action.shape} , fixed_log_probs: {fixed_log_probs.shape}")
+
+        for i in range(self.K_epochs):
+            values_pred = self.critic(state, action)
+            value_loss = (values_pred - returns).pow(2).mean()
+            for param in self.critic.parameters():
+                value_loss += param.pow(2).sum() * self.l2_reg
+
+        #    if self.total_it % 1000 == 0 and i == 0:
+        #        print(f"Shape: value_pred:{values_pred.shape}")
+        #        print(f"value_loss: {value_loss}")
+
+            critic_losses.append(value_loss.detach().cpu().numpy())
+            self.critic_optimizer.zero_grad()
+            self.actor_optimizer.zero_grad()
+            value_loss.backward(retain_graph=True)
+
+
+        log_probs = self.actor.get_log_prob(state, action)
+        ratio = torch.exp(log_probs - fixed_log_probs)
+        surr1 = ratio * advantages
+        surr2 = torch.clamp(ratio, 1.0 - self.clip_param, 1.0 + self.clip_param) * advantages
+        policy_surr = -torch.min(surr1, surr2).mean()
+        #policy_surr.requires_grad_ = True
+
+        #if self.total_it % 1000 == 0:
+        #    print(f"Shape: ratio:{ratio.shape}, surr1: {surr1.shape}, surr2: {surr2.shape}")
+        #    print(f"policy_surr: {policy_surr}")
+        actor_losses.append(policy_surr.detach().cpu().numpy())
+
+        policy_surr.backward()
+        torch.nn.utils.clip_grad_norm_(self.actor.parameters(), 40)
+        self.critic_optimizer.step()
+        self.actor_optimizer.step()
+
+
+        '''
+        old_states = state
+        old_actions, old_logprobs = self.actor_target.act(state)
+        old_state_values = self.critic_target(state, old_actions)
+
+        advantages = rewards.detach() - old_state_values.detach()
+        advtg = advantages.view(-1)
 
         # Optimize policy for K epochs
         for i in range(self.K_epochs):
             with torch.no_grad():
-                # Select action according to policy and add clipped noise
-                noise = (
-                torch.randn_like(action) * self.policy_noise).clamp(
-                -self.noise_clip, self.noise_clip)
 
-                next_action = (
-                self.actor_target(next_state) + noise
-                ).clamp(-self.max_action, self.max_action)
-
-                # Compute the target Q value
-                next_Q = self.critic_target(next_state, self.actor_target(next_state))
-                next_value = rewards + not_done * self.discount * next_Q
-                #if self.total_it % 500 == 0:
-                #    print(f"reward shape: {reward.shape}, reward: {reward}")
-                    #print(f"End target_Q: {target_Q}")
-
-            cur_log_prob, cur_dist_entropy = self.actor.get_log_prob1(state)
-            next_log_prob, next_dist_entropy = self.actor_target.get_log_prob1(next_state)
-            # Get current Q estimate
-            cur_Q = self.critic(state, action)
-            # Compute critic loss
-            critic_loss = F.mse_loss(cur_Q, next_value)
-            if self.total_it % 500 == 0:
-                print(f'critic_loss: {critic_loss}')
-
-            advantages = rewards.detach() - cur_Q.detach()
-            advtg = advantages.view(-1)
+                state_values = self.critic(old_states, old_actions)
+                logprobs, dist_entropy = self.actor.get_prob(old_states, old_actions)
+                state_values = self.critic(state, old_actions)
 
             # Finding the ratio (pi_theta / pi_theta__old)
-            ratios = torch.exp(next_log_prob - cur_log_prob)
+            ratios = torch.exp(logprobs - old_logprobs.detach())
+
+
             # Finding Surrogate Loss
-            surr1 = advtg * ratios
-            surr2 = advtg * torch.clamp(ratios, 1 - self.clip_param, 1 + self.clip_param)
+            surr1 = ratios * advtg
+            surr2 = torch.clamp(ratios, 1 - self.clip_param, 1 + self.clip_param) * advtg
 
             # final loss of clipped objective PPO
-            loss1 = -torch.min(surr1, surr2).mean()
+            loss1 = - torch.min(surr1, surr2).mean()
             loss1.requires_grad = True
+            loss2 = 0.5 * self.loss(state_values, rewards)
+            loss2.requires_grad = True
+            loss3 = (- 0.01 * dist_entropy).mean()
+            loss = loss1 + loss2 + loss3
 
-            # Compute actor loss
+
             loss0 = -self.critic(state, self.actor(state)).mean()
 
+
             # act_loss = loss1 + loss3
-            if self.total_it % 200 == 0 and i == 0:
+            if self.total_it % 1000 == 0 and i == 0:
                 print(
                     f"state, action, reward, not_done shape: {state.shape},{action.shape},{reward.shape},{not_done.shape}")
+                #print(f"not_done: {not_done}")
                 print(f"old state shape: {old_state.shape}, ratios shape: {ratios.shape}")
                 print(
                     f"advantages shape: {advantages.shape}, advtg shape: {advtg.shape}, rewards shape:{rewards.shape}")
-                print(f"log_prob shape: {cur_log_prob.shape}, dist_entropys shape: {cur_dist_entropy.shape}")
-                print(f"cur_Q shape: {cur_Q.shape}, ratios shape:{ratios.shape}")
-                print(f"critic_loss: {critic_loss}, loss 0:{loss0} , loss1:{loss1} ")
+                print(f"log_prob shape: {old_logprobs.shape}, dist_entropys shape: {dist_entropy.shape}")
+                print(f"state_values shape: {state_values.shape}, ratios shape:{ratios.shape}")
+                print(f"loss0: {loss0}, loss: {loss}, loss1: {loss1}, loss 2:{loss2} , loss3:{loss3} ")
                 print(f"surr1 shape: {surr1.shape}, surr2 shape: {surr2.shape}")
 
-            # Optimize the critic
+                # take gradient stepf
+
+                # Optimize the critic
             self.critic_optimizer.zero_grad()
-            critic_loss.backward()
+            self.actor_optimizer.zero_grad()
+
+            loss0.backward()
+            loss.backward()
+            #loss2.backward()
+            #loss1.backward()
+            self.actor_optimizer.step()
             self.critic_optimizer.step()
 
-
-
-            if self.total_it % 500 == 0:
-                print(f'loss1: {loss1}')
+            #if self.total_it % 1000 == 0 and i == 0:
+            #    print(f'loss1: {loss1}, loss2: {loss2}, loss3: {loss3}')
 
             # Optimize the actor
-            self.actor_optimizer.zero_grad()
-            loss1.backward()
-            self.actor_optimizer.step()
+
 
             actor_losses.append(loss1.detach().numpy())
-            critic_losses.append(critic_loss.detach().numpy())
-
-        if self.total_it % 1 == 0:
-            self.actor_target.load_state_dict(self.actor.state_dict())
-            self.critic_target.load_state_dict(self.critic.state_dict())
+            critic_losses.append(loss2.detach().numpy())
+        '''
+        #if self.total_it % 2 == 0:
+        #    self.actor_target.load_state_dict(self.actor.state_dict())
+        #    self.critic_target.load_state_dict(self.critic.state_dict())
         # Update the frozen target models
         #for param, target_param in zip(self.critic.parameters(), self.critic_target.parameters()):
         #    target_param.data.copy_(self.tau * param.data + (1 - self.tau) * target_param.data)
@@ -326,8 +424,8 @@ class PPO(object):
         #    target_param.data.copy_(self.tau * param.data + (1 - self.tau) * target_param.data)
         critic_loss = np.mean(critic_losses)
         actor_loss = np.mean(actor_losses)
-        if self.total_it % 200 == 0:
-            print(f"critic_loss: {critic_loss}, actor_loss: {actor_loss}")
+        if self.total_it % 5000 == 0:
+            print(f"PPO {self.total_it},  critic_loss: {critic_loss}, actor_loss: {actor_loss}")
         return critic_loss, actor_loss
 
 
@@ -398,7 +496,7 @@ class PPO(object):
 
         episode_start_time = start_time
 
-        for t in range(1,int(timesteps)+1):
+        for t in range(1,int(timesteps)):
             self.num_timesteps = t
 
             episode_timesteps += 1
@@ -423,6 +521,9 @@ class PPO(object):
             if self.done:
                 episode_finish_time = time.clock_gettime(time.CLOCK_REALTIME)
                 if t < start_timesteps:
+                    actor_loss = 0
+                    critic_loss = 0
+
                     self.trackr.append(actor_loss=0,
                                        critic_loss=0,
                                        episode_reward=episode_reward,
@@ -434,6 +535,10 @@ class PPO(object):
                            episode_reward=episode_reward,
                            episode_length = episode_timesteps,
                            episode_fps = episode_timesteps / (episode_finish_time - episode_start_time))
+
+                if t%5000 == 0:
+                    print(f"PPO {t}, actor_loss: {actor_loss}, critic_loss: {critic_loss}, ep_reward: {episode_reward}")
+                    print(f"PPO {t}, epi_length: {episode_timesteps}, epi_fps: {episode_timesteps / (episode_finish_time - episode_start_time)}")
 
             callback.on_step()
             if self.done:

@@ -1,0 +1,42 @@
+begin KicadParser
+	timestamp=1724225335
+	timestamp_human=2024-08-21 15:28:55+08:00
+	KicadParser_version=v0.1.13
+	netlist_graph_version=v0.1.16
+	pcb_version=v0.0.12
+	kicad_uri=//home/yons/work/RL_PCB-main/experiments/10_parameter_exeperiments/work/eval_testing_set/1724204417_1/voltage_datalogger_adc2/trial_0/voltage_datalogger_adc2_best_hpwl_10_overlap.kicad_pcb
+	components=3
+	board_size_x=20.00000000
+	board_size_y=20.00000000
+	board_area=400.00000000
+end KicadParser
+begin sa_pcb
+	timestamp=1724225335
+	timestamp_human=2024-08-21 15:28:55+08:00
+	SA_PCB_version=v0.0.7
+	KicadParser_version=v0.1.13
+	netlist_graph_version=v0.1.16
+	kicad_uri=
+	ignore_power_nets=True
+	iters=0
+	overlap=0.00000000
+	wirelength=18.78119987
+	rudy=244.36252765
+end sa_pcb
+begin pcbRouter
+	timestamp=1724225335
+	timestamp_human=2024-08-21 15:28:55+08:00
+	pcbRouter_version=v0.0.6
+	KicadParser_version=v0.1.13
+	netlist_graph_version=v0.1.16
+	input_file=//home/yons/work/RL_PCB-main/experiments/10_parameter_exeperiments/work/eval_testing_set/1724204417_1/voltage_datalogger_adc2/trial_0/voltage_datalogger_adc2_best_hpwl_10_overlap.kicad_pcb
+	output_file=//home/yons/work/RL_PCB-main/experiments/10_parameter_exeperiments/work/eval_testing_set/1724204417_1/voltage_datalogger_adc2/trial_0/voltage_datalogger_adc2_best_hpwl_10_overlap_routed.kicad_pcb
+	rip_up_reroute_iterations=0
+	wirelength_cost=1.00000000
+	layer_change_cost=100.00000000
+	perendicular_mode=no
+	elapsed_time=0:0:0
+	cpu_time=0:0:0
+	routed_wirelength=17.54974773
+	routed_vias=0.00000000
+end pcbRouter

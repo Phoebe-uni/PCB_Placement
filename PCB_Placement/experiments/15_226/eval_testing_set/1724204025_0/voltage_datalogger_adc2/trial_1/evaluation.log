@@ -1,0 +1,1223 @@
+timestamp=2024-08-21 15:00:20:520214
+parameters begin
+	training_pcb -> None
+	evaluation_pcb -> None
+	pcb_file -> /home/yons/work/RL_PCB-main/dataset/base/evaluation.pcb
+	net -> 
+	use_dataAugmenter -> True
+	augment_position -> True
+	augment_orientation -> True
+	agent_max_action -> 1
+	agent_expl_noise -> 0.1
+	debug -> True
+	max_steps -> 600
+	n -> 6.0
+	m -> 2.0
+	p -> 2.0
+	seed -> 2427050077
+	ignore_power -> True
+	log_dir -> None
+	idx -> 1
+	shuffle_idxs -> False
+parameters end
+run=1/3 @ episode_step=1 : 20% overlap best hpwl : hpwl=28.1124, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=2 : 20% overlap best hpwl : hpwl=28.1124, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=3 : 20% overlap best hpwl : hpwl=28.1124, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=4 : 20% overlap best hpwl : hpwl=28.1124, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=5 : 20% overlap best hpwl : hpwl=28.1124, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=6 : 20% overlap best hpwl : hpwl=28.1124, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=7 : 20% overlap best hpwl : hpwl=28.1124, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=8 : 20% overlap best hpwl : hpwl=28.1124, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=9 : 20% overlap best hpwl : hpwl=28.1124, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=10 : 20% overlap best hpwl : hpwl=28.1124, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=11 : 20% overlap best hpwl : hpwl=28.1124, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=12 : 20% overlap best hpwl : hpwl=28.1124, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=13 : 20% overlap best hpwl : hpwl=28.1124, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=14 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=15 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=16 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=17 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=18 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=19 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=20 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=21 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=22 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=23 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=24 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=25 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=26 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=27 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=28 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=29 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=30 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=31 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=32 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=33 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=34 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=35 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=36 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=37 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=38 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=39 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=40 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=41 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=42 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=43 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=44 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=45 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=46 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=47 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=48 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=49 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=50 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=51 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=52 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=53 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=54 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=55 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=56 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=57 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=58 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=59 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=60 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=61 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=62 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=63 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=64 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=65 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=66 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=67 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=68 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=69 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=70 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=71 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=72 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=73 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=74 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=75 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=76 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=77 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=78 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=79 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=80 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=81 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=82 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=83 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=84 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=85 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=86 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=87 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=88 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=89 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=90 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=91 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=92 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=93 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=94 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=95 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=96 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=97 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=98 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=99 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=100 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=101 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=102 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=103 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=104 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=105 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=106 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=107 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=108 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=109 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=110 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=111 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=112 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=113 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=114 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=115 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=116 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=117 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=118 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=119 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=120 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=121 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=122 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=123 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=124 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=125 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=126 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=127 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=128 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=129 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=130 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=131 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=132 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=133 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=134 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=135 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=136 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=137 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=138 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=139 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=140 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=141 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=142 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=143 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=144 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=145 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=146 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=147 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=148 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=149 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=150 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=151 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=152 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=153 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=154 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=155 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=156 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=157 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=158 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=159 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=160 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=161 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=162 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=163 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=164 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=165 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=166 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=167 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=168 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=169 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=170 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=171 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=172 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=173 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=174 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=175 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=176 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=177 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=178 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=179 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=180 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=181 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=182 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=183 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=184 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=185 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=186 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=187 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=188 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=189 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=190 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=191 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=192 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=193 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=194 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=195 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=196 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=197 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=198 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=199 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=200 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=201 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=202 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=203 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=204 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=205 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=206 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=207 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=208 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=209 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=210 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=211 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=212 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=213 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=214 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=215 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=216 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=217 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=218 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=219 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=220 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=221 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=222 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=223 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=224 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=225 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=226 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=227 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=228 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=229 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=230 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=231 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=232 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=233 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=234 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=235 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=236 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=237 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=238 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=239 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=240 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=241 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=242 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=243 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=244 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=245 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=246 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=247 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=248 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=249 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=250 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=251 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=252 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=253 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=254 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=255 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=256 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=257 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=258 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=259 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=260 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=261 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=262 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=263 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=264 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=265 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=266 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=267 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=268 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=269 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=270 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=271 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=272 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=273 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=274 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=275 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=276 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=277 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=278 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=279 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=280 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=281 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=282 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=283 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=284 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=285 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=286 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=287 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=288 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=289 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=290 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=291 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=292 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=293 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=294 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=295 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=296 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=297 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=298 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=299 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=300 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=301 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=302 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=303 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=304 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=305 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=306 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=307 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=308 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=309 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=310 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=311 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=312 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=313 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=314 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=315 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=316 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=317 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=318 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=319 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=320 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=321 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=322 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=323 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=324 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=325 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=326 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=327 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=328 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=329 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=330 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=331 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=332 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=333 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=334 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=335 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=336 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=337 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=338 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=339 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=340 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=341 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=342 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=343 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=344 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=345 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=346 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=347 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=348 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=349 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=350 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=351 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=352 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=353 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=354 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=355 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=356 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=357 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=358 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=359 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=360 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=361 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=362 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=363 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=364 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=365 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=366 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=367 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=368 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=369 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=370 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=371 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=372 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=373 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=374 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=375 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=376 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=377 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=378 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=379 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=380 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=381 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=382 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=383 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=384 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=385 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=386 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=387 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=388 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=389 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=390 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=391 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=392 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=393 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=394 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=395 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=396 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=397 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=398 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=399 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=400 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=401 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=402 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=403 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=404 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=405 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=406 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=407 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=408 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=409 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=410 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=411 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=412 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=413 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=414 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=415 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=416 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=417 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=418 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=419 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=420 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=421 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=422 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=423 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=424 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=425 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=426 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=427 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=428 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=429 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=430 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=431 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=432 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=433 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=434 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=435 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=436 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=437 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=438 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=439 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=440 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=441 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=442 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=443 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=444 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=445 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=446 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=447 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=448 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=449 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=450 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=451 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=452 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=453 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=454 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=455 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=456 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=457 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=458 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=459 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=460 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=461 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=462 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=463 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=464 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=465 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=466 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=467 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=468 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=469 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=470 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=471 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=472 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=473 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=474 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=475 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=476 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=477 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=478 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=479 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=480 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=481 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=482 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=483 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=484 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=485 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=486 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=487 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=488 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=489 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=490 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=491 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=492 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=493 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=494 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=495 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=496 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=497 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=498 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=499 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=500 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=501 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=502 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=503 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=504 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=505 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=506 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=507 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=508 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=509 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=510 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=511 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=512 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=513 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=514 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=515 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=516 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=517 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=518 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=519 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=520 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=521 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=522 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=523 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=524 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=525 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=526 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=527 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=528 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=529 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=530 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=531 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=532 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=533 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=534 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=535 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=536 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=537 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=538 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=539 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=540 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=541 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=542 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=543 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=544 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=545 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=546 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=547 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=548 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=549 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=550 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=551 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=552 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=553 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=554 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=555 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=556 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=557 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=558 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=559 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=560 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=561 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=562 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=563 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=564 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=565 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=566 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=567 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=568 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=569 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=570 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=571 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=572 : 20% overlap best hpwl : hpwl=28.1123, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=573 : 20% overlap best hpwl : hpwl=28.1122, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=574 : 20% overlap best hpwl : hpwl=28.1122, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=575 : 20% overlap best hpwl : hpwl=28.1122, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=576 : 20% overlap best hpwl : hpwl=28.1122, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=577 : 20% overlap best hpwl : hpwl=28.1122, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=578 : 20% overlap best hpwl : hpwl=28.1122, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=579 : 20% overlap best hpwl : hpwl=28.1122, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=580 : 20% overlap best hpwl : hpwl=28.1122, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=581 : 20% overlap best hpwl : hpwl=28.1122, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=582 : 20% overlap best hpwl : hpwl=28.1122, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=583 : 20% overlap best hpwl : hpwl=28.1122, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=584 : 20% overlap best hpwl : hpwl=28.1122, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=585 : 20% overlap best hpwl : hpwl=28.1122, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=586 : 20% overlap best hpwl : hpwl=28.1122, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=587 : 20% overlap best hpwl : hpwl=28.1122, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=588 : 20% overlap best hpwl : hpwl=28.1122, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=589 : 20% overlap best hpwl : hpwl=28.1122, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=590 : 20% overlap best hpwl : hpwl=28.1122, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=591 : 20% overlap best hpwl : hpwl=28.1122, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=592 : 20% overlap best hpwl : hpwl=28.1122, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=593 : 20% overlap best hpwl : hpwl=28.1122, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=594 : 20% overlap best hpwl : hpwl=28.1122, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=595 : 20% overlap best hpwl : hpwl=28.1122, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=596 : 20% overlap best hpwl : hpwl=28.1122, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=597 : 20% overlap best hpwl : hpwl=28.1122, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=598 : 20% overlap best hpwl : hpwl=28.1122, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=599 : 20% overlap best hpwl : hpwl=28.1122, overlap=2.3913
+all_ol=[19.130434782608695, 0.0]
+run=1/3 @ episode_step=600 : 20% overlap best hpwl : hpwl=28.1122, overlap=2.3913
+all_ol=[19.130434782608695]
+eval_env episode 1 performed 600 steps in environment.

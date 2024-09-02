@@ -185,7 +185,7 @@ class DDPG(object):
 			).clamp(-self.max_action, self.max_action)
 
             # Compute the target Q value
-            target_Q = self.critic_target(next_state, self.actor_target(next_state))
+            target_Q = self.critic_target(next_state, next_action)
             target_Q = reward + not_done * self.discount * target_Q
             #if self.total_it % 500 == 0:
             #    print(f"reward shape: {reward.shape}, reward: {reward}")
@@ -197,22 +197,23 @@ class DDPG(object):
         # Compute critic loss
         critic_loss = F.mse_loss(current_Q, target_Q)
 
-        if self.total_it % 500 == 0:
-            print(f'critic_loss: {critic_loss}')
+        #if self.total_it % 5000 == 0:
+        #    print(f'DDPG {self.total_it}, critic_loss: {critic_loss}')
 
         # Optimize the critic
         self.critic_optimizer.zero_grad()
         critic_loss.backward()
-        self.critic_optimizer.step()
+
 
         # Compute actor loss
         actor_loss = -self.critic(state, self.actor(state)).mean()
-        if self.total_it % 500 == 0:
-            print(f'actor_loss: {actor_loss}')
+        if self.total_it % 5000 == 0:
+            print(f'DDPG {self.total_it}, critic_loss: {critic_loss}, actor_loss: {actor_loss}')
 
         # Optimize the actor
         self.actor_optimizer.zero_grad()
         actor_loss.backward()
+        self.critic_optimizer.step()
         self.actor_optimizer.step()
 
         # Update the frozen target models
@@ -318,6 +319,9 @@ class DDPG(object):
             if self.done:
                 episode_finish_time = time.clock_gettime(time.CLOCK_REALTIME)
                 if t < start_timesteps:
+                    actor_loss = 0
+                    critic_loss = 0
+
                     self.trackr.append(actor_loss=0,
                                        critic_loss=0,
                                        episode_reward=episode_reward,
@@ -329,6 +333,10 @@ class DDPG(object):
                            episode_reward=episode_reward,
                            episode_length = episode_timesteps,
                            episode_fps = episode_timesteps / (episode_finish_time - episode_start_time))
+                if t%5000 == 0:
+                    print(f"DDPG {t}, actor_loss: {actor_loss}, critic_loss: {critic_loss}, ep_reward: {episode_reward}")
+                    print(f"DDPG {t}, epi_length: {episode_timesteps}, epi_fps: {episode_timesteps / (episode_finish_time - episode_start_time)}")
+
 
             callback.on_step()
             if self.done:

@@ -98,7 +98,7 @@ class agent(gym.Env):
 
         if random is True:
             action = self.action_space.sample()
-            if rl_model_type == "TD3" or rl_model_type == "PPO" or rl_model_type == "DDPG" or rl_model_type == "DQN":
+            if rl_model_type == "TD3" or rl_model_type == "PPO" or rl_model_type == "A2C" or rl_model_type == "DDPG" or rl_model_type == "DQN":
                 model_action = [0,0,0]#action
                 model_action[0] = (action[0] - 0.5) * 2
                 model_action[1] = (action[1] - np.pi) / np.pi
@@ -109,7 +109,7 @@ class agent(gym.Env):
                     #print(f"log_prob: {log_prob}")
 
         else:
-            if rl_model_type == "TD3" or rl_model_type == "PPO" or rl_model_type == "DDPG" or rl_model_type == "DQN":
+            if rl_model_type == "TD3" or rl_model_type == "PPO" or rl_model_type == "A2C" or rl_model_type == "DDPG" or rl_model_type == "DQN":
                  # Action scaling done here, outside of policy.
                 if deterministic is True:
                     model_action = model.select_action(np.array(_state))
@@ -150,7 +150,7 @@ class agent(gym.Env):
             return state, next_state, reward, model_action, done, old_state
         elif rl_model_type == "SAC":
             return state, next_state, reward, action, done, old_state
-        else :
+        else :  # PPO or A2C
             return state, next_state, reward, model_action, done, old_state
 
     def get_reward(self, observation):

@@ -29,7 +29,7 @@ if [ -e "$KICAD_PARSER" ] && [ -e "$SA_PCB" ] && [ -e "$PCB_ROUTER" ]; then
     TD3_EVAL_TESTING_DIR=${TEST_DIR}/work/eval_testing_set
     SAC_EVAL_TESTING_DIR=${TEST_DIR}/work/eval_testing_set
 
-    ./eval_just_do_it.sh -p ${RL_PCB}/dataset/base/evaluation.pcb -b ${RL_PCB}/dataset/base_raw --bin_dir ${RL_PCB}/bin --path_prefix "" -d ${TEST_DIR}/work -e training_sac_cuda_262 --report_type both,mean -o ${TD3_EVAL_TESTING_DIR} --runs 4 --max_steps 600
+    ./eval_just_do_it.sh -p ${RL_PCB}/dataset/base/evaluation.pcb -b ${RL_PCB}/dataset/base_raw --bin_dir ${RL_PCB}/bin --path_prefix "" -d ${TEST_DIR}/work -e parameter_experiment_262 --report_type both,mean -o ${TD3_EVAL_TESTING_DIR} --runs 4 --max_steps 600
 
     cd ${TEST_DIR}
 else

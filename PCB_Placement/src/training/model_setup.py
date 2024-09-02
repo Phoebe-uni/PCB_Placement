@@ -9,6 +9,9 @@ Supported models:
 - TD3 (Twin Delayed DDPG)
 - SAC (Soft Actor-Critic)
 - PPO (Proximal Policy Optimization)
+- DDPG
+- DQN
+- A2C
 
 Module Functions:
     - td3_model_setup(train_env, hyperparameters, device="cpu",
@@ -29,8 +32,9 @@ import SAC
 import PPO
 import DDPG
 import DQN
+import A2C
 
-supported_models = ["TD3", "SAC", "PPO"]
+supported_models = ["TD3", "SAC", "PPO", "DDPG", "DQN", "A2C"]
 
 def td3_model_setup(train_env,
                     hyperparameters,
@@ -144,6 +148,34 @@ def ppo_model_setup(train_env,
                     verbose=verbose)
     return model
 
+def a2c_model_setup(train_env,
+                    hyperparameters,
+                    device="cpu",
+                    early_stopping:int = 100_000,
+                    verbose:int = 0):
+    """
+    Setup function for the TD3 model.
+
+    Args:
+        train_env: The training environment.
+        hyperparameters: Hyperparameters for the A2C model.
+        device (str): The device to use for computations (default: "cpu").
+        early_stopping (int): The number of steps for early stopping\
+              (default: 100_000).
+        verbose (int): Verbosity level (0: silent, 1: intermediate output,\
+              2: detailed output) (default: 0).
+
+    Returns:
+        TD3: The initialized TD3 model.
+    """
+    model = A2C.A2C(max_action=1.0,
+                    hyperparameters=hyperparameters,
+                    train_env=train_env,
+                    device=device,
+                    early_stopping=early_stopping,
+                    verbose=verbose)
+    return model
+
 def sac_model_setup(train_env,
                     hyperparameters,
                     device="cpu",
@@ -219,12 +251,19 @@ def setup_model( model_type: str,
                                 device=device,
                                 early_stopping=early_stopping,
                                 verbose=verbose)
-    else:           # PPO Model
+    elif model_type == "PPO":           # PPO Model
         model = ppo_model_setup(train_env=train_env,
                                 hyperparameters=hyperparameters,
                                 device=device,
                                 early_stopping=early_stopping,
                                 verbose=verbose)
+    else:  #A2C Model
+        model = a2c_model_setup(train_env=train_env,
+                                hyperparameters=hyperparameters,
+                                device=device,
+                                early_stopping=early_stopping,
+                                verbose=verbose)
+
 
 
 #        print(f"{model_type} is not a supported model.\

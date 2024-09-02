@@ -1,0 +1,79 @@
+timestamp=2024-08-21 15:12:44:397279
+parameters begin
+	training_pcb -> None
+	evaluation_pcb -> None
+	pcb_file -> /home/yons/work/RL_PCB-main/dataset/base/evaluation.pcb
+	net -> 
+	use_dataAugmenter -> True
+	augment_position -> True
+	augment_orientation -> True
+	agent_max_action -> 1
+	agent_expl_noise -> 0.1
+	debug -> True
+	max_steps -> 600
+	n -> 6.0
+	m -> 2.0
+	p -> 2.0
+	seed -> 4175508672
+	ignore_power -> True
+	log_dir -> None
+	idx -> 1
+	shuffle_idxs -> False
+parameters end
+run=3/3 @ episode_step=1 : Zero overlap best hpwl : hpwl=25.4697, overlap=0.0
+all_ol=[0.0, 0.0]
+run=3/3 @ episode_step=1 : 10% overlap best hpwl : hpwl=25.4697, overlap=0.0
+all_ol=[0.0, 0.0]
+run=3/3 @ episode_step=1 : 20% overlap best hpwl : hpwl=25.4697, overlap=0.0
+all_ol=[0.0, 0.0]
+run=3/3 @ episode_step=2 : Zero overlap best hpwl : hpwl=22.9355, overlap=0.0
+all_ol=[0.0, 0.0]
+run=3/3 @ episode_step=2 : 10% overlap best hpwl : hpwl=22.9355, overlap=0.0
+all_ol=[0.0, 0.0]
+run=3/3 @ episode_step=2 : 20% overlap best hpwl : hpwl=22.9355, overlap=0.0
+all_ol=[0.0, 0.0]
+run=3/3 @ episode_step=4 : Zero overlap best hpwl : hpwl=20.5597, overlap=0.0
+all_ol=[0.0, 0.0]
+run=3/3 @ episode_step=4 : 10% overlap best hpwl : hpwl=20.5597, overlap=0.0
+all_ol=[0.0, 0.0]
+run=3/3 @ episode_step=4 : 20% overlap best hpwl : hpwl=20.5597, overlap=0.0
+all_ol=[0.0, 0.0]
+run=3/3 @ episode_step=5 : 10% overlap best hpwl : hpwl=18.1148, overlap=1.0118
+all_ol=[5.565217391304348, 2.5295109612141653]
+run=3/3 @ episode_step=5 : 20% overlap best hpwl : hpwl=18.1148, overlap=1.0118
+all_ol=[5.565217391304348, 2.5295109612141653]
+run=3/3 @ episode_step=8 : 10% overlap best hpwl : hpwl=16.5639, overlap=0.8478
+all_ol=[0.0, 6.782608695652175]
+run=3/3 @ episode_step=8 : 20% overlap best hpwl : hpwl=16.5639, overlap=0.8478
+all_ol=[0.0, 6.782608695652175]
+run=3/3 @ episode_step=9 : 20% overlap best hpwl : hpwl=15.0366, overlap=4.5776
+all_ol=[19.47826086956522, 17.142857142857142]
+run=3/3 @ episode_step=13 : 20% overlap best hpwl : hpwl=14.6699, overlap=3.1696
+all_ol=[19.285714285714285, 6.07142857142857]
+run=3/3 @ episode_step=22 : 10% overlap best hpwl : hpwl=16.0802, overlap=0.3913
+all_ol=[0.0, 3.130434782608696]
+run=3/3 @ episode_step=41 : 20% overlap best hpwl : hpwl=14.6072, overlap=4.0644
+all_ol=[16.863406408094434, 15.652173913043477]
+run=3/3 @ episode_step=42 : 10% overlap best hpwl : hpwl=16.078, overlap=1.1739
+all_ol=[0.0, 9.391304347826088]
+run=3/3 @ episode_step=43 : 20% overlap best hpwl : hpwl=14.1962, overlap=4.2451
+all_ol=[18.782608695652176, 15.178571428571427]
+run=3/3 @ episode_step=51 : 10% overlap best hpwl : hpwl=15.7152, overlap=1.1384
+all_ol=[0.0, 9.107142857142858]
+run=3/3 @ episode_step=56 : Zero overlap best hpwl : hpwl=16.5883, overlap=0.0
+all_ol=[0.0, 0.0]
+run=3/3 @ episode_step=145 : 10% overlap best hpwl : hpwl=15.1972, overlap=2.1079
+all_ol=[7.75716694772344, 9.106239460370995]
+run=3/3 @ episode_step=153 : 20% overlap best hpwl : hpwl=14.1926, overlap=4.3634
+all_ol=[19.73018549747049, 15.177065767284992]
+run=3/3 @ episode_step=255 : 20% overlap best hpwl : hpwl=14.1845, overlap=3.3839
+all_ol=[17.678571428571427, 9.392265193370166]
+run=3/3 @ episode_step=256 : Zero overlap best hpwl : hpwl=16.0529, overlap=0.0
+all_ol=[0.0, 0.0]
+run=3/3 @ episode_step=501 : 20% overlap best hpwl : hpwl=14.1726, overlap=4.2451
+all_ol=[18.782608695652176, 15.178571428571427]
+run=3/3 @ episode_step=543 : 10% overlap best hpwl : hpwl=15.0631, overlap=1.9815
+all_ol=[6.745362563237774, 9.106239460370995]
+run=3/3 @ episode_step=600 : Zero overlap best hpwl : hpwl=15.5463, overlap=0.0
+all_ol=[0.0]
+eval_env episode 3 performed 600 steps in environment.

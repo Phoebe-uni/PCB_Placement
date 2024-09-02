@@ -1,0 +1,27 @@
+timestamp=2024-08-21 15:08:34:315088
+parameters begin
+	training_pcb -> None
+	evaluation_pcb -> None
+	pcb_file -> /home/yons/work/RL_PCB-main/dataset/base/evaluation.pcb
+	net -> 
+	use_dataAugmenter -> True
+	augment_position -> True
+	augment_orientation -> True
+	agent_max_action -> 1
+	agent_expl_noise -> 0.1
+	debug -> True
+	max_steps -> 600
+	n -> 6.0
+	m -> 2.0
+	p -> 2.0
+	seed -> 2198662304
+	ignore_power -> True
+	log_dir -> None
+	idx -> 2
+	shuffle_idxs -> False
+parameters end
+run=2/3 @ episode_step=318 : 20% overlap best hpwl : hpwl=44.7384, overlap=11.9787
+all_ol=[5.5649241146711645, 14.180478821362799, 14.08695652173913, 16.8695652173913, 16.020236087689714, 18.75, 0.0, 10.357142857142856]
+run=2/3 @ episode_step=495 : 20% overlap best hpwl : hpwl=44.0249, overlap=10.0763
+all_ol=[0.7142857142857143, 10.497237569060774, 12.47892074198988, 18.043844856661043, 15.304347826086955, 4.285714285714286, 19.285714285714285, 0.0]
+eval_env episode 2 performed 600 steps in environment.

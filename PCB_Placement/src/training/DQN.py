@@ -168,9 +168,9 @@ class DQN(object):
 
         R = 0
         rewards1 = []
-        reward1 = reward.numpy()
+        reward1 = reward.cpu().numpy()
         for r, n in zip(reversed(reward1), reversed(not_done)):
-            R = r + (1. - n.numpy()) * self.discount * R
+            R = r + n.cpu().numpy() * self.discount * R
             rewards1.insert(0, R)
         rewards = torch.tensor(np.array(rewards1), dtype=torch.float).to(self.device)
 
@@ -198,23 +198,24 @@ class DQN(object):
         # Compute critic loss
         critic_loss = F.mse_loss(current_Q, target_Q)
 
-        if self.total_it % 500 == 0:
-            print(f'critic_loss: {critic_loss}')
+        #if self.total_it % 3000 == 0:
+        #    print(f'critic_loss: {critic_loss}')
 
         # Optimize the critic
         self.critic_optimizer.zero_grad()
         critic_loss.backward()
-        self.critic_optimizer.step()
+
 
         # Compute actor loss
         actor_loss = -self.critic(state, self.actor(state)).mean()
 
-        if self.total_it % 500 == 0:
-            print(f'actor_loss: {actor_loss}')
+        #if self.total_it % 3000 == 0:
+        #    print(f'actor_loss: {actor_loss}')
 
         # Optimize the actor
         self.actor_optimizer.zero_grad()
         actor_loss.backward()
+        self.critic_optimizer.step()
         self.actor_optimizer.step()
 
         if self.total_it % 1 == 0:

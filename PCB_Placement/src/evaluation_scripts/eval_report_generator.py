@@ -69,7 +69,7 @@ class PageNumCanvas(canvas.Canvas):
 def cmdline_args():
     parser = argparse.ArgumentParser(
         description="Multi-agent pcb component placement evaluation",
-        usage="<script-name> -p <pcb_file> --rl_model_type [TD3 | SAC | PPO | DDPG | DQN]",
+        usage="<script-name> -p <pcb_file> --rl_model_type [TD3 | SAC | PPO | DDPG | DQN | A2C]",
         epilog="This text will be shown after the help")
 
     parser.add_argument("-e", "--experiments", nargs="+", type=str, default=None, required=False)

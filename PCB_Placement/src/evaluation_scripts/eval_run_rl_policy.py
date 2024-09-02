@@ -88,9 +88,9 @@ def configure_seed(args):
 def cmdline_args():
     parser = argparse.ArgumentParser(
         description="Multi-agent pcb component placement evaluation",
-        usage="<script-name> -p <pcb_file> --rl_model_type [TD3 | SAC | PPO | DDPG | DQN]",
+        usage="<script-name> -p <pcb_file> --rl_model_type [TD3 | SAC | PPO | DDPG | DQN | A2C]",
         epilog="This text will be shown after the help")
-    parser.add_argument("--policy", type=str, choices=["TD3", "SAC", "PPO", "DDPG", "DQN"],
+    parser.add_argument("--policy", type=str, choices=["TD3", "SAC", "PPO", "DDPG", "DQN", "A2C"],
                         required=True)
     parser.add_argument("--model", type=str, required=True)
     parser.add_argument("--pcb_file", type=str, required=True)
@@ -242,7 +242,7 @@ def evaluation_run(settings):
         episode_steps=0
         while not done:
             episode_steps += 1
-            if settings["policy"] == "TD3" or settings["policy"] == "PPO" or settings["policy"] == "DDPG" or settings["policy"] == "DQN":
+            if settings["policy"] == "TD3" or settings["policy"] == "PPO" or settings["policy"] == "A2C"  or settings["policy"] == "DDPG" or settings["policy"] == "DQN":
                 obs_vec = eval_env.step(model=model.actor,
                                         random=False,
                                         deterministic=True,

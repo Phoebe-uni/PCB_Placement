@@ -289,9 +289,8 @@ class SAC(object):
             alpha_loss = torch.tensor(0.).to(self.device)
             alpha_tlogs = torch.tensor(self.alpha) # For TensorboardX logs
 
-        if self.training_step % 50 == 0:
-            print(f"policy_loss: {policy_loss}")
-            print(f"alpha_loss: {alpha_loss}")
+        if self.training_step % 5000 == 0:
+            print(f"SAC {self.training_step}, policy_loss: {policy_loss.item()}, alpha_loss: {alpha_loss.item()}")
         self.training_step += 1
 
         if updates % self.target_update_interval == 0:
@@ -402,6 +401,9 @@ class SAC(object):
             if self.done:
                 episode_finish_time = time.clock_gettime(time.CLOCK_REALTIME)
                 if t < start_timesteps or len(self.replay_buffer) <= self.batch_size:
+                    actor_loss = 0
+                    critic_loss = 0
+
                     self.trackr.append(actor_loss=0,
                            critic_loss=0,
                            episode_reward=episode_reward,
@@ -421,6 +423,10 @@ class SAC(object):
                            critic_2_loss=np.mean(all_critic_2_losses),
                            entropy_loss=np.mean(all_entropy_losses),
                            entropy=alpha)
+                if t%5000 == 0:
+                    print(f"SAC {t}, actor_loss: {actor_loss}, critic_loss: {critic_loss}, ep_reward: {episode_reward}")
+                    print(f"SAC {t}, epi_length: {episode_timesteps}, epi_fps: {episode_timesteps / (episode_finish_time - episode_start_time)}")
+
 
             callback.on_step()
             if self.done:

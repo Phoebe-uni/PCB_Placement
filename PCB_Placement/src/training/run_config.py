@@ -16,7 +16,7 @@ import graph.graph as graph
 def cmdline_args():
     parser = argparse.ArgumentParser(
         description="unified argument parser for pcb component training",
-        usage="<script-name> -p <pcb_file> --rl_model_type [TD3 | SAC | PPO]",
+        usage="<script-name> -p <pcb_file> --rl_model_type [TD3 | SAC | PPO | A2C | DDPG | DQN]",
         epilog="This text will be shown after the help")
 
     # Policy name (TD3 os SAC or PPO)
@@ -192,7 +192,7 @@ def write_desc_log(full_fn: str, settings: dict,
         if settings["rl_model_type"] != "DQN":
             f.write(str(model.critic))
             f.write("\n\n")
-        if settings["rl_model_type"] != "DQN" and settings["rl_model_type"] != "PPO":
+        if settings["rl_model_type"] != "DQN" and settings["rl_model_type"] != "PPO" and settings["rl_model_type"] != "A2C":
             f.write("Critic target\n")
             f.write(str(model.critic_target))
             f.write("\n\n")

@@ -1,0 +1,29 @@
+timestamp=2024-08-21 15:28:51:525561
+parameters begin
+	training_pcb -> None
+	evaluation_pcb -> None
+	pcb_file -> /home/yons/work/RL_PCB-main/dataset/base/evaluation.pcb
+	net -> 
+	use_dataAugmenter -> True
+	augment_position -> True
+	augment_orientation -> True
+	agent_max_action -> 1
+	agent_expl_noise -> 0.1
+	debug -> True
+	max_steps -> 600
+	n -> 6.0
+	m -> 2.0
+	p -> 2.0
+	seed -> 2427050077
+	ignore_power -> True
+	log_dir -> None
+	idx -> 1
+	shuffle_idxs -> False
+parameters end
+run=1/3 @ episode_step=1 : Zero overlap best hpwl : hpwl=30.2723, overlap=0.0
+all_ol=[0.0, 0.0]
+run=1/3 @ episode_step=1 : 10% overlap best hpwl : hpwl=30.2723, overlap=0.0
+all_ol=[0.0, 0.0]
+run=1/3 @ episode_step=1 : 20% overlap best hpwl : hpwl=30.2723, overlap=0.0
+all_ol=[0.0, 0.0]
+eval_env episode 1 performed 14 steps in environment.

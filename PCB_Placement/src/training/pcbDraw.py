@@ -864,6 +864,8 @@ def get_los_and_ol_multi_agent(node,
     y = board.get_height() / res
     pos = node.get_pos()
 
+    if pos is None:
+        pos = [0., 0.]
     if padding is not None:
         cx = int(pos[0]/res) + int(padding/res)
         cy = int(pos[1]/res) + int(padding/res)
